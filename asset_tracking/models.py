@@ -27,3 +27,16 @@ class Device(models.Model):
     def __str__(self):
         # Return a string representation of the Device instance
         return f"{self.id} - {self.device_name} - {self.company}"
+    
+# Model to represent the log of device transactions
+class DeviceLog(models.Model):
+    device = models.ForeignKey(Device, on_delete=models.CASCADE)
+    employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    checkout_time = models.DateTimeField()
+    return_time = models.DateTimeField()
+    condition_out = models.TextField()
+    condition_returned = models.TextField()
+
+    def __str__(self):
+        # Return a string representation of the DeviceLog instance
+        return f"{self.id} - {self.device} - {self.employee}"

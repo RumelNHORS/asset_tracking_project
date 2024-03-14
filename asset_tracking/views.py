@@ -19,3 +19,8 @@ class EmployeeListCreateView(generics.ListCreateAPIView):
 class DeviceListCreateView(generics.ListCreateAPIView):
     queryset = models.Device.objects.all()
     serializer_class = serializers.DeviceSerializer
+
+# View to list and create device logs
+class DeviceLogListCreateView(generics.ListCreateAPIView):
+    queryset = models.DeviceLog.objects.all()
+    serializer_class = serializers.DeviceLogSerializer

@@ -20,3 +20,9 @@ class DeviceSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Device
         fields = '__all__'
+
+# Serializer for DeviceLog model
+class DeviceLogSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.DeviceLog
+        fields = '__all__'
