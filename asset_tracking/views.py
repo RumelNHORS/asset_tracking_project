@@ -14,3 +14,8 @@ class CompanyListCreateView(generics.ListCreateAPIView):
 class EmployeeListCreateView(generics.ListCreateAPIView):
     queryset = models.Employee.objects.all()
     serializer_class = serializers.EmployeeSerializer
+
+# View to list and create devices
+class DeviceListCreateView(generics.ListCreateAPIView):
+    queryset = models.Device.objects.all()
+    serializer_class = serializers.DeviceSerializer

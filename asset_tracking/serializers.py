@@ -14,3 +14,9 @@ class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Employee
         fields = '__all__'
+
+# Serializer for Device model
+class DeviceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Device
+        fields = '__all__'
