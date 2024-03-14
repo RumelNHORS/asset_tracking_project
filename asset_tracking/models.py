@@ -2,16 +2,17 @@ from django.db import models
 
 # Define models for the asset tracking app
 
+
+# Model to represent a company
 class Company(models.Model):
-    # Model to represent a company
     company_name = models.CharField(max_length=255)
 
     def __str__(self):
         # Return a string representation of the Company instance
         return f"{self.id} - {self.company_name}"
 
+# Model to represent an employee
 class Employee(models.Model):
-    # Model to represent an employee
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
     employee_name = models.CharField(max_length=255)
 
@@ -33,9 +34,9 @@ class DeviceLog(models.Model):
     device = models.ForeignKey(Device, on_delete=models.CASCADE)
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
     checkout_time = models.DateTimeField()
-    return_time = models.DateTimeField()
+    return_time = models.DateTimeField(null=True)
     condition_out = models.TextField()
-    condition_returned = models.TextField()
+    condition_returned = models.TextField(null=True)
 
     def __str__(self):
         # Return a string representation of the DeviceLog instance
