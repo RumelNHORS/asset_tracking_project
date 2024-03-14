@@ -1,0 +1,90 @@
+# Asset Tracking API Documentation
+
+## Views
+
+### CompanyListCreateView
+
+View to list and create companies.
+
+- Endpoint: `http://127.0.0.1:8000/api/companies/`
+- Methods:
+  - GET: Retrieve a list of all companies.
+  - POST: Create a new company.
+
+### CompanyUpdateView
+
+View for retrieving and updating a Company instance.
+
+- Endpoint: `http://127.0.0.1:8000/api/companies/<pk>/`
+- Methods:
+  - GET: Retrieve details of a specific company.
+  - PUT/PATCH: Update details of a specific company.
+
+### EmployeeListCreateView
+
+View to list and create employees.
+
+- Endpoint: `http://127.0.0.1:8000/api/employees/`
+- Methods:
+  - GET: Retrieve a list of all employees.
+  - POST: Create a new employee.
+
+### EmployeeUpdateView
+
+View for retrieving and updating an Employee instance.
+
+- Endpoint: `http://127.0.0.1:8000/api/employees/<pk>/`
+- Methods:
+  - GET: Retrieve details of a specific employee.
+  - PUT/PATCH: Update details of a specific employee.
+
+### DeviceListCreateView
+
+View to list and create devices.
+
+- Endpoint: `http://127.0.0.1:8000/api/devices/`
+- Methods:
+  - GET: Retrieve a list of all devices.
+  - POST: Create a new device.
+
+### DeviceUpdateView
+
+View for retrieving and updating a Device instance.
+
+- Endpoint: `http://127.0.0.1:8000/api/devices/<pk>/`
+- Methods:
+  - GET: Retrieve details of a specific device.
+  - PUT/PATCH: Update details of a specific device.
+
+### DeviceLogListCreateView
+
+View to list and create device logs.
+
+- Endpoint: `http://127.0.0.1:8000/api/logs/`
+- Methods:
+  - GET: Retrieve a list of all device logs.
+  - POST: Create a new device log.
+
+### DeviceLogUpdateView
+
+View for retrieving and updating a DeviceLog instance.
+
+- Endpoint: `http://127.0.0.1:8000/api/logs/<pk>/`
+- Methods:
+  - GET: Retrieve details of a specific device log.
+  - PUT/PATCH: Update details of a specific device log.
+
+## URLs
+
+The following URLs are available to access the Asset Tracking API:
+
+- `/companies/`: Endpoint to list and create companies.
+- `/companies/<pk>/`: Endpoint to retrieve and update company details.
+- `/employees/`: Endpoint to list and create employees.
+- `/employees/<pk>/`: Endpoint to retrieve and update employee details.
+- `/devices/`: Endpoint to list and create devices.
+- `/devices/<pk>/`: Endpoint to retrieve and update device details.
+- `/logs/`: Endpoint to list and create device logs.
+- `/logs/<pk>/`: Endpoint to retrieve and update device log details.
+
+Each endpoint supports specific HTTP methods for interaction with the API resources.

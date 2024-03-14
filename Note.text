@@ -1,0 +1,23 @@
+1.Clone the Repository:
+
+Clone the project repository from the version control system where it's hosted (e.g., GitHub). You can use Git to clone the repository with the following command:
+    git clone https://github.com/RumelNHORS/asset_tracking_project.git
+
+2. Navigate to the Project Directory:
+Once the repository is cloned, navigate to the project directory using the cd command:
+    cd asset_tracking_project
+
+3. Install Dependencies:
+Before running the project, you need to install the required dependencies. Assuming you have Python and pip installed, you can install the dependencies by running:
+    pip install -r requirements.txt
+
+4. Apply Migrations:
+Apply the database migrations to create the necessary database tables. Run the following command:
+    python manage.py migrate
+
+5.Run the Development Server:
+You can now run the development server using the following command:
+    python manage.py runserver
+
+6. Interact with the API:
+You can now make requests to the API endpoints to list, create, retrieve, and update companies, employees, devices, and device logs as per the provided documentation.
